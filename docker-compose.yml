@@ -22,6 +22,9 @@ services:
     # healthcheck below.
     environment:
       PORT: 3000
+      SUPABASE_URL: http://host.docker.internal:8000
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     # Host side only — HOST_PORT=8080 publishes the app on :8080.
     ports:
       - '${HOST_PORT:-3000}:3000'

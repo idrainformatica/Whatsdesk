@@ -5,7 +5,7 @@ export async function middleware(request: NextRequest) {
   let supabaseResponse = NextResponse.next({ request })
 
   const supabase = createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    (process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL)!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
     {
       cookies: {
@@ -19,6 +19,9 @@ export async function middleware(request: NextRequest) {
             supabaseResponse.cookies.set(name, value, options)
           )
         },
+      },
+      cookieOptions: {
+        name: "sb-wacrm-auth-token",
       },
     }
   )

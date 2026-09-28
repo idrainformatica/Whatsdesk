@@ -35,7 +35,7 @@ let _adminClient: any = null
 function supabaseAdmin() {
   if (!_adminClient) {
     _adminClient = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      (process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL)!,
       process.env.SUPABASE_SERVICE_ROLE_KEY!
     )
   }

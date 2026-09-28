@@ -3,6 +3,9 @@ import createNextIntlPlugin from "next-intl/plugin";
 
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
+const SUPABASE_ORIGIN = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "https://*.supabase.co";
+const SUPABASE_WS_ORIGIN = SUPABASE_ORIGIN.replace(/^http/, "ws");
+
 /**
  * Baseline security headers applied to every response.
  *
@@ -48,14 +51,14 @@ const SECURITY_HEADERS = [
       // Supabase public-bucket avatars, contact avatars (arbitrary
       // https URLs paste-able from the UI), OG images, data URLs for
       // tiny inline assets.
-      "img-src 'self' data: blob: https:",
+      "img-src 'self' data: blob: https: " + SUPABASE_ORIGIN,
       // Outbound media previews (blob: from MediaRecorder + file picker)
       // and Supabase public-bucket audio/video the inbox renders.
-      "media-src 'self' blob: https://*.supabase.co",
+      "media-src 'self' blob: " + SUPABASE_ORIGIN,
       "font-src 'self' data:",
       // Supabase REST + realtime (WSS). All Meta API calls happen
       // server-side, so graph.facebook.com does not belong here.
-      "connect-src 'self' https://*.supabase.co wss://*.supabase.co",
+      "connect-src 'self' " + SUPABASE_ORIGIN + " " + SUPABASE_WS_ORIGIN,
       "frame-ancestors 'none'",
       "base-uri 'self'",
       "form-action 'self'",
