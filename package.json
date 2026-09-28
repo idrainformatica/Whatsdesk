@@ -1,18 +1,11 @@
 {
-  "name": "wacrm",
+  "name": "whatsdesk",
   "version": "0.8.0",
   "private": true,
-  "description": "Self-hostable CRM template for WhatsApp built on Next.js and Supabase — shared inbox, contacts, sales pipelines, broadcasts, and no-code automations.",
+  "description": "WhatsDesk — CRM per WhatsApp sviluppato e personalizzato da Idra Informatica (https://idrainformatica.it).",
   "license": "MIT",
-  "author": "Arnas Donauskas",
-  "homepage": "https://github.com/ArnasDon/wacrm",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ArnasDon/wacrm.git"
-  },
-  "bugs": {
-    "url": "https://github.com/ArnasDon/wacrm/issues"
-  },
+  "author": "Idra Informatica <info@idrainformatica.it>",
+  "homepage": "https://idrainformatica.it",
   "keywords": [
     "crm",
     "whatsapp",

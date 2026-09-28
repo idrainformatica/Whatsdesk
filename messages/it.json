@@ -15,7 +15,7 @@
     "createAccount": "Crea account"
   },
   "Sidebar": {
-    "title": "Modello CRM per WhatsApp",
+    "title": "WhatsDesk",
     "primaryNav": "Principale",
     "dashboard": "Dashboard",
     "inbox": "Inbox",
@@ -1383,7 +1383,7 @@
       "done": "Fatto",
       "dialogTitle": "Invita un membro del team",
       "networkError": "Impossibile contattare il server. Riprovare?",
-      "fallbackAccountName": "il nostro account wacrm",
+      "fallbackAccountName": "il nostro account WhatsDesk",
       "dialogDesc": "Genera un link di invito monouso. Condividilo via WhatsApp, Slack o qualsiasi canale — nessun servizio email necessario.",
       "roleLabel": "Ruolo",
       "validForLabel": "Link valido per",
@@ -1400,7 +1400,7 @@
       "labelTooLong": "L'etichetta deve essere di {max} caratteri o meno",
       "copied": "Link di invito copiato",
       "clipboardBlocked": "Appunti bloccati — copia il link manualmente",
-      "whatsappMessage": "Unisciti a {accountName} su wacrm con questo link (valido per {expiresInDays} giorni): {url}"
+      "whatsappMessage": "Unisciti a {accountName} su WhatsDesk con questo link (valido per {expiresInDays} giorni): {url}"
     },
     "tagsAndFields": {
       "title": "Campi e tag",
@@ -1519,8 +1519,8 @@
       "saveResubmit": "Salva e reinvia",
       "submitApproval": "Invia per l'approvazione",
       "deleteDialogTitle": "Eliminare il template?",
-      "deleteMetaDesc": "\"{name}\" verrà eliminato da Meta e da wacrm. Gli invii massivi attivi che usano questo template inizieranno a fallire al prossimo invio. Questa azione non può essere annullata.",
-      "deleteLocalDesc": "\"{name}\" verrà eliminato da wacrm. Non è mai stato inviato a Meta, quindi non è necessaria alcuna pulizia remota.",
+      "deleteMetaDesc": "\"{name}\" verrà eliminato da Meta e da WhatsDesk. Gli invii massivi attivi che usano questo template inizieranno a fallire al prossimo invio. Questa azione non può essere annullata.",
+      "deleteLocalDesc": "\"{name}\" verrà eliminato da WhatsDesk. Non è mai stato inviato a Meta, quindi non è necessaria alcuna pulizia remota.",
       "deleting": "Eliminazione…",
       "delete": "Elimina",
       "toastLoadFailed": "Impossibile caricare i template",
@@ -1563,7 +1563,7 @@
       "notConnected": "Non connesso",
       "connectedDesc": "Il tuo token di accesso si autentica con Meta. Vedi Stato registrazione qui sotto per sapere se i webhook sono effettivamente collegati.",
       "notConnectedDesc": "Configura qui sotto le credenziali della tua API Meta per collegare il tuo account WhatsApp Business.",
-      "registered": "Registrato — Meta consegnerà gli eventi a wacrm",
+      "registered": "Registrato — Meta consegnerà gli eventi a WhatsDesk",
       "notRegistered": "Non registrato — Meta non consegnerà gli eventi",
       "verifyWithMeta": "Verifica con Meta",
       "subscribedSince": "Sottoscritto dal {date}. Clicca Verifica con Meta se gli eventi smettono di arrivare.",
@@ -1587,7 +1587,7 @@
       "twoStepPin": "PIN di verifica in due passaggi",
       "optional": "(facoltativo)",
       "pinPlaceholder": "PIN a 6 cifre da Meta WhatsApp Manager",
-      "pinHint": "Necessario solo per collegare i messaggi in arrivo di un numero di produzione. Impostalo in Meta Business Manager → WhatsApp Accounts → Phone Numbers → Two-step verification, poi incollalo qui così wacrm può sottoscrivere il numero — altrimenti Meta instrada gli eventi in arrivo all'app che lo ha rivendicato per ultima (il sintomo che colpisce i secondi numeri sotto una WABA condivisa). I numeri di test di Meta non hanno PIN e sono pre-registrati — lascia vuoto per quelli. Lasciarlo vuoto mantiene inoltre invariata una registrazione esistente.",
+      "pinHint": "Necessario solo per collegare i messaggi in arrivo di un numero di produzione. Impostalo in Meta Business Manager → WhatsApp Accounts → Phone Numbers → Two-step verification, poi incollalo qui così WhatsDesk può sottoscrivere il numero — altrimenti Meta instrada gli eventi in arrivo all'app che lo ha rivendicato per ultima (il sintomo che colpisce i secondi numeri sotto una WABA condivisa). I numeri di test di Meta non hanno PIN e sono pre-registrati — lascia vuoto per quelli. Lasciarlo vuoto mantiene inoltre invariata una registrazione esistente.",
       "webhookTitle": "Configurazione webhook",
       "webhookDesc": "Usa questo URL come callback webhook nella dashboard dell'app Meta.",
       "webhookUrl": "URL callback webhook",
@@ -1816,7 +1816,7 @@
     },
     "aiConfig": {
       "title": "Configurazione agente",
-      "description": "Porta la tua chiave OpenAI o Anthropic. wacrm chiama il provider direttamente con la tua chiave — nessun costo AI per postazione e i tuoi dati restano tuoi. Questo alimenta le risposte bozza con AI nell'inbox, il bot di risposta automatica e il Playground.",
+      "description": "Porta la tua chiave OpenAI o Anthropic. WhatsDesk chiama il provider direttamente con la tua chiave — nessun costo AI per postazione e i tuoi dati restano tuoi. Questo alimenta le risposte bozza con AI nell'inbox, il bot di risposta automatica e il Playground.",
       "adminOnlyConfig": "Solo amministratori e proprietari possono cambiare la configurazione AI.",
       "loadFailed": "Impossibile caricare la configurazione AI",
       "providerAndKey": "Provider e chiave",
@@ -1893,7 +1893,7 @@
     "titleJoin": "Crea account ed entra",
     "title": "Crea account",
     "descJoin": "Verifica la tua email, poi accetta l'invito per unirti al tuo team.",
-    "desc": "Inizia con CRM Template per WhatsApp",
+    "desc": "Inizia con WhatsDesk",
     "fullNameLabel": "Nome completo",
     "fullNamePlaceholder": "Mario Rossi",
     "emailLabel": "Email",

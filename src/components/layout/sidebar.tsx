@@ -293,6 +293,24 @@ export function Sidebar({ open = false, onClose }: SidebarProps) {
           </ul>
         </nav>
 
+        <div className="shrink-0 px-4 pb-2 text-[10px] text-muted-foreground/70">
+          <a
+            href="https://idrainformatica.it"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-muted-foreground"
+          >
+            di Idra Informatica
+          </a>
+          {" · "}
+          <a
+            href="mailto:info@idrainformatica.it"
+            className="hover:text-muted-foreground"
+          >
+            info@idrainformatica.it
+          </a>
+        </div>
+
         {/* User section */}
         <div className="shrink-0 border-t border-border p-3">
           {/* Account name display — surfaced only when the account

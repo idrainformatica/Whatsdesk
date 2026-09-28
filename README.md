@@ -1,8 +1,8 @@
-# wacrm — CRM Template for WhatsApp
+# WhatsDesk — CRM per WhatsApp
 
-> Self-hostable CRM template for WhatsApp® — shared inbox, contacts,
-> sales pipelines, broadcasts, and no-code automations. Fork it, brand
-> it, host it.
+> WhatsDesk — CRM per WhatsApp sviluppato e personalizzato da
+> [Idra Informatica](https://idrainformatica.it) — info@idrainformatica.it.
+> Shared inbox, contatti, pipeline di vendita, invii massivi e automazioni no-code.
 
 <p align="center">
   <a href="https://www.hostinger.com/web-apps-hosting?REFERRALCODE=WACRMHOST">
