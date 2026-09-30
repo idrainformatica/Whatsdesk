@@ -1,0 +1,49 @@
+Idra Informatica
+
+Privacy Policy
+Whatsdesk | Effective September 14, 2026
+
+This Privacy Policy explains how Idra Informatica("we", "us", or "our") collects, uses, stores, and shares information when businesses use WhatsDesk and its related services.
+
+Information we collect
+We may process the following information when you use the service: 
+
+Account details, including your name, email address, and workspace membership.
+WhatsApp Business account information authorized through Meta, including business portfolio, WhatsApp Business Account, and phone number identifiers.
+Instagram Business or Creator account information authorized through Meta, including Instagram account ID, username, profile metadata, connected permissions, and access status.
+Instagram media metadata needed to configure automations, including post or reel IDs, captions, media type, thumbnail URLs, permalinks, and timestamps for media owned by the connected account.
+Instagram comment and messaging data handled through Meta APIs, including comment IDs, commenter IDs/usernames, comment text, media IDs, direct message IDs, message text, quick-reply/postback payloads, delivery identifiers, webhook payloads, and automation status.
+Customer contact information, conversations, message content, media, delivery status, and message metadata handled through the WhatsApp Business Platform, Instagram APIs, or other workspace integrations.
+CRM information you provide, such as contacts, notes, tags, pipelines, templates, broadcasts, automations, and team settings.
+Technical logs used to operate, secure, and troubleshoot the service.
+How we use information
+We use information to provide the shared inbox and CRM, send and receive WhatsApp and Instagram messages at your direction, list Instagram posts so workspace users can choose media for automations, receive comment and message webhooks, send public comment replies, send allowed private replies or direct messages after a user comment, message, or opt-in, synchronize delivery and automation status, maintain account security, diagnose errors, and comply with applicable law. We do not sell personal information or Meta Platform Data.
+
+Meta, WhatsApp, and Instagram platform data
+The service accesses Meta Platform Data only after an authorized workspace user completes Meta's connection flow or supplies authorized API credentials. This includes WhatsApp Business Platform data and Instagram API data for the connected business assets.
+
+For Instagram, we request only the permissions needed for the product: instagram_business_basic to read account and media metadata, instagram_business_manage_comments to receive comment webhooks and manage replies, and instagram_business_manage_messages to read and respond to Instagram direct messages and private replies. Tokens are stored encrypted and used only to operate the connected workspace features.
+
+Use of information received from Meta APIs is subject to Meta's applicable platform terms and policies. Disconnecting an integration stops future collection for that integration, but does not automatically delete information already stored in the CRM.
+
+Messaging consent and opt-out
+Workspace owners are responsible for ensuring they have a lawful basis, consent, or other permission to contact their customers. Instagram automations are designed to respond to user-initiated actions such as a comment, incoming direct message, or opt-in button tap. Users may opt out of messaging by requesting that the connected business stop contacting them, blocking the business on the relevant Meta service, or contacting us using the information below. We will assist workspace owners with honoring deletion and opt-out requests applicable to data stored in the service.
+
+Workspace administrator responsibilities
+Businesses that use WhatsDesk decide which customer records, connected Meta assets, automations, broadcasts, and team members are added to their workspace. Workspace administrators are responsible for configuring automations accurately, using customer information only for lawful business purposes, maintaining consent or other legal basis for communications, honoring opt-out requests, and ensuring their use of the service matches this policy and applicable Meta, WhatsApp, and Instagram terms.
+
+Sharing and service providers
+We share information only as needed to provide the service, including with Meta, WhatsApp, and Instagram for messaging, comments, webhooks, and connected-account operations; Supabase for authentication and database services; hosting and infrastructure providers; and other processors configured by the workspace owner. We may also disclose information when required by law or necessary to protect the service and its users.
+
+Retention and security
+Information is retained while the workspace is active and as reasonably necessary for the purposes described above, legal obligations, dispute resolution, and security. We use access controls, encrypted transport, and encrypted storage for sensitive integration credentials. No system can guarantee absolute security.
+
+Your choices and deletion requests
+Depending on your location, you may request access, correction, export, restriction, or deletion of your personal information. Workspace administrators can also disconnect WhatsApp or Instagram integrations and remove CRM records. To submit a privacy, opt-out, or data deletion request, email us using the contact information below. We may verify your identity and authority before completing a request.
+
+Changes to this policy
+We may update this policy when the service or legal requirements change. The effective date displayed on this page identifies the latest revision. If our data practices materially change, we will update this page so the policy continues to describe the data collected, processed, stored, shared, and deleted by the service.
+
+Contact us
+For privacy questions, messaging opt-out support, or data deletion requests, contact Idra Informatica at info@idrainformatica.it
+

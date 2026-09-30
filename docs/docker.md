@@ -144,6 +144,32 @@ docker build \
 docker run -d --env-file .env.local -e PORT=3000 -p 3000:3000 wacrm
 ```
 
+## Privacy policy page (standalone nginx)
+
+`/privacy` is served by a dedicated `nginx` container, not by the app:
+
+```bash
+docker run -d --name whatsdesk-privacy --restart unless-stopped \
+  -p 8090:80 \
+  -v /opt/whatsdesk-privacy/index.html:/usr/share/nginx/html/privacy/index.html:ro \
+  -v /opt/whatsdesk-privacy/nginx.conf:/etc/nginx/conf.d/default.conf:ro \
+  nginx:1.27-alpine
+```
+
+- Source of truth in the repo: `privacy-nginx/index.html` (rendered from
+  `docs/Whatsdesk_privacyPolicy`) and `privacy-nginx/nginx.conf`. The
+  deployment copies live in `/opt/whatsdesk-privacy/` on the host.
+- The reverse proxy in front routes the `/privacy` location to
+  `<host>:8090`.
+- `absolute_redirect off` in `nginx.conf` matters behind a reverse
+  proxy: without it nginx would emit absolute redirects that leak the
+  internal port to the browser.
+- Updating the policy text is a file copy: edit `index.html`, copy it
+  over `/opt/whatsdesk-privacy/index.html` — nginx serves static files
+  from disk on every request, so no restart or reload is needed.
+- Anything outside `/privacy` returns `404`; the container serves
+  nothing else.
+
 ## Notes
 
 - Received attachments are copied into the `chat-media` Storage bucket,
